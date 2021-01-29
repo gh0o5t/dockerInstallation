@@ -46,7 +46,7 @@ run_command "sudo add-apt-repository \
 run_command "sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io" \
     "Installing Docker"
 
-run_command "sudo usermod -aG docker $USER && newgrp docker" \
+run_command "sudo usermod -aG docker $USER" \
     "Adding $USER to docker group"
 
 run_command "sudo curl \
