@@ -47,7 +47,7 @@ run_command "sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-
     "Installing Docker"
 
 run_command "sudo usermod -aG docker $USER" \
-    "Adding user to docker group"
+    "Adding $USER to docker group"
 
 run_command "sudo curl \
     -L \"https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)\" \
